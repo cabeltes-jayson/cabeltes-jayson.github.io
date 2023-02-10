@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayson's Portfolio</title>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*NAVIGATION BAR*/
+    nav{
+        position: fixed;
+        width: 100%;
+        padding: 5px 0;
+        font-family: Verdana;
+        transition: all 0.4s ease;
+    }
+    nav.sticky{
+        padding: 0px 0;
+        background: rgba(255, 62, 62, 0.3);
+
+    }
+    nav .navbar{
+        /*width: 100%;*/
+        /*margin-top: -25px;*/
+        background-color: rgba(177, 188, 247, 0.7);
+    }
+    nav .navbar .menu{
+        text-align: center;
+    }
+    nav .navbar .menu li{
+        list-style: none;
+        display:inline-block;
+    }
+    nav .navbar .menu li a{
+        display:block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        font-family: verdana;
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 25px;
+        transition: 0.1s ease;
+    }
+    nav .navbar .menu li a:hover{
+        background-color: #e7c76d;
+    }
+    /* HOME PAGE CONTENT*/
+    .home {
+        height: 100vh;
+        width: 100%;
+        background: url("sceneryno2.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: verdana;
+    }
+    .home .home-content{
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home .text .text-1{
+        font-size: 30px;
+        color: white;
+    }
+    .home .text .text-2{
+        font-size: 70px;
+        font-weight: 600;
+        margin-left: -3px;
+        color: rgb(255, 255, 255);
+
+    }
+    .home .text .text-3{
+        font-size: 40px;
+        color: rgb(142, 227, 255);
+    }
+    /*ABOUT CONTENT*/
+    .about .content{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .about .title{
+        font-family: century;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .about .title span{
+        font-size: 40px;
+        font-weight: 500;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+    .about .about-details{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about .about-details .right{
+        width: 45%;
+    }
+    .about .about-details .right img{
+        height: 450px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 130px;
+        margin-top: -30px;
+    }
+    .about .about-details .left{
+        width: 55%;
+    }
+    .about-details .left .topic{
+        font-family: courier;
+        font-size: 25px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+    }
+    .about-details .left p{
+        font-family: comic sans-serif;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-align: justify;
+        margin-top: 70px;
+    }
+    /*PROJECTS CONTENT*/
+    .projects .content{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .projects .title{
+        font-family: century;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .projects .title span{
+        font-size: 40px;
+        font-weight: 500;
+        position: relative;
+        margin-top: 30px;
+    }
+    .projects .upperimages{
+        display: flex;
+        justify-content: center;
+    }
+    .projects .upperimages img{
+        margin-top: 80px;
+        margin-left: 110px;
+        margin-right: 110px;
+        object-fit: contain;
+    }
+    .projects .lowerimages{
+        display: flex;
+        justify-content: center;
+    }
+    .projects .lowerimages img{
+        margin-top: 120px;
+        margin-bottom: 100px;
+        margin-left: 120px;
+        margin-right: 120px;
+        object-fit: contain;
+    }  
+
+</style>
+</head>
+<body>
+    <!-- NAVIGATION BAR SECTION -->
+    <nav>
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text">
+                <div class="text-1">Hi,</div>
+                <div class="text-2"><mark style="background-color: rgba(247, 250, 58, 0.4);">I'm Jayson Cabeltes</mark></div>
+                <div class="text-3">IT Student</div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- ABOUT SECTION-->
+    <section class="about" id="about" style="background-color: rgb(255, 218, 209);">
+        <div class="content">
+            <div class="title"><span><u style="text-decoration-color: gray
+                ;text-decoration-thickness: 3px;">About Me</u></span></div>
+            <div class="about-details">
+                <div class="right">
+                    <img src="a.lofi.gif" alt="">
+                </div>
+                <div class="left">
+                    <div class="topic">We dont just design the problem, we code it.</div>
+                    <p>I am an IT student hailing from University of Science and Technology of Southern Philippines
+                         (USTP). I am 20 years old and an average 2nd year college programmer. I like designing more 
+                         than coding a website. I am more confident to my creativity trait than logical ability, so in this
+                         course/subject, I hope that I can maybe enhance my lacking talent. </p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION-->
+    <section class="projects" id="projects" style="background-color: rgb(189, 230, 255);">
+        <div class="content">
+            <div class="title"><span><u style="text-decoration-color: gray
+                ;text-decoration-thickness: 3px;">Projects/Skills</u></span>
+            </div>
+            <div class="upperimages">
+                <img src="p.figma.png" alt=""  width="170" height="170">
+                <img src="p.canva.png" alt=""  width="170" height="170">
+                <img src="p.piktochart.png" alt=""  width="170" height="170">
+            </div>
+            <div class="lowerimages">
+                <img src="p.html.png" alt=""  width="160" height="160">
+                <img src="p.java.png" alt=""  width="170" height="170">
+                <img src="p.python.png" alt=""  width="160" height="160">
+            </div>
+        </div>
+    </section>
+
+</body>
+<!-- For Sticky NavBar + Responsive change to color -->
+<script>
+    let navbar = document.querySelector(".navBar");
+    let nav = document.querySelector("nav");
+    let val;
+    window.onscroll = function() {
+        if(document.documentElement.scrollTop > 20) {
+            nav.classList.add("sticky");
+        } else {
+            nav.classList.remove("sticky");
+        }
+    }</script>
+</html>
